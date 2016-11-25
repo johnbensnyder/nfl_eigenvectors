@@ -72,7 +72,7 @@ import networkx as nx
 
 G = nx.DiGraph()
 
-G = nx.from_pandas_dataframe(edgelist,'lossing_team','winning_team','weight',G)
+G = nx.from_pandas_dataframe(edgelist,'lossing_team','winning_team','tie',G)
 
 centrality = nx.eigenvector_centrality(G)
 
